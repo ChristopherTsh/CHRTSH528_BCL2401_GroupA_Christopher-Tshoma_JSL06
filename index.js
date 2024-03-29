@@ -1,8 +1,8 @@
 // Sample menu data (Consider fetching this data from a server in a real-world scenario)
 const menu = {
     Starters_R30: ["Garlic Bread", "Bruschetta"],
-    MainCourses: ["Margherita Pizza", "Spaghetti Carbonara"],
-    Desserts: ["Tiramisu", "Cheesecake"]
+    MainCourses_R50: ["Margherita Pizza", "Spaghetti Carbonara"],
+    Desserts_R40: ["Tiramisu", "Cheesecake"]
 };
 
 // Function to display menu items by category
@@ -53,12 +53,12 @@ function addToOrder(itemName) {
             price = 30.00;
         }
     });
-    menu.MainCourses.map(name => {
+    menu.MainCourses_R50.map(name => {
         if(name === itemName){
             price = 50.00;
         }
     });
-    menu.Desserts.map(name => {
+    menu.Desserts_R40.map(name => {
         if(name === itemName){
             price = 40.00;
         }
@@ -95,12 +95,12 @@ function RemoveFromOrder(item) {
             price = 30.00;
         }
     });
-    menu.MainCourses.map(name => {
+    menu.MainCourses_R50.map(name => {
         if(name === item.textContent){
             price = 50.00;
         }
     });
-    menu.Desserts.map(name => {
+    menu.Desserts_R40.map(name => {
         if(name === item.textContent){
             price = 40.00;
         }
